@@ -22,6 +22,9 @@ class HomeController extends Controller {
      */
     public function index() {
         $users = User::all();
+
+        //dd($users->avg);
+
         return view('home',[
             'users' => $users,
 
